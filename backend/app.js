@@ -11,6 +11,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+//responses with the seeds json
 app.get('/seeds', (req, res)=>{
     res.status(200).json(seeds.seeds);
 });
