@@ -41,6 +41,18 @@
             "difficulty": "Weekly Extreme",
             "type": "Land Speed",
             "seed": "A5 BE FB 80"
+        },
+        {
+            "date": "(SPECIAL) Double Bumper Land Speed",
+            "difficulty": "Daily",
+            "type": "Land Speed",
+            "seed": "AB 25 8F 80"
+        },
+        {
+            "date": "(SPECIAL) Fastest Tower Speed",
+            "difficulty": "Daily Extreme",
+            "type": "Tower Speed",
+            "seed": "A7 3C 12 DC"
         }
 
     ]
