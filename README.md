@@ -5,6 +5,9 @@
 
 <div id="about">
   <h2>About</h2>
+  <p>
+    This is a website containing Rayman Legends Challenge Seeds. You can think of it as a Minecraft Seed where based on different seeds, you get different world generations. Application provides seeds from various dates including special seeds (labeled (SPECIAL) <name>).
+  </p>
 </div>
 
 <div id="add-seed">
