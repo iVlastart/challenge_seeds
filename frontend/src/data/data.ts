@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { ISeed } from "../App";
+import type { ISeed } from "../interfaces/data";
 
 export const get_seeds = async()=>{
   const res = await axios.get(`${import.meta.env.VITE_API_URL}/seeds`);

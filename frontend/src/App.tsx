@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
-import { bgColour, get_seeds, seeds_sort, tHeader } from "./data/data";
+import { get_seeds, tHeader } from "./data/data";
 import { ArrowDown } from "./icons/arrowDown";
 import { ArrowUp } from "./icons/arrowUp";
-
-export interface ISeed{
-  date: string;
-  difficulty: string;
-  type: string;
-  seed: string;
-};
+import { SeedTBody } from "./components/SeedTBody";
+import type { ISeed } from "./interfaces/data";
 
 export default function App(){
   const [seeds, setSeeds] = useState<ISeed[]>([]);
@@ -46,16 +41,7 @@ export default function App(){
           </tr>
         </thead>
         <tbody>
-          {[...seeds]
-          .sort((a, b) => seeds_sort(a,b,isAscending))
-          .map((seed, key) => (
-            <tr key={key} className={bgColour(seed.type)}>
-              <td className="no-copy">{seed.date}</td>
-              <td className="no-copy">{seed.difficulty}</td>
-              <td className="no-copy">{seed.type}</td>
-              <td>{seed.seed}</td>
-            </tr>
-          ))}
+          <SeedTBody seeds={seeds} isAscending={isAscending}/>
         </tbody>
       </table>
     </div>
