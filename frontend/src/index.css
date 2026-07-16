@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .container{
-  @apply w-screen h-screen flex flex-col gap-y-4;
+  @apply w-screen h-screen flex flex-col gap-y-4 overflow-hidden;
 }
 
 table{

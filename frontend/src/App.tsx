@@ -21,16 +21,21 @@ export default function App(){
   return(
     <div className="container">
       <Header/>
-      <table>
-        <thead>
-          <tr>
-            <SeedTHeader isAscending={isAscending} setIsAscending={setIsAscending}/>
-          </tr>
-        </thead>
-        <tbody>
-          <SeedTBody seeds={seeds} isAscending={isAscending}/>
-        </tbody>
-      </table>
+      <div className="max-h-10/12 overflow-y-scroll">
+        <table>
+          <thead className="sticky top-0 bg-white">
+            <tr>
+              <SeedTHeader isAscending={isAscending} setIsAscending={setIsAscending}/>
+            </tr>
+          </thead>
+          <tbody className="overflow-y-scroll">
+            <SeedTBody seeds={seeds} isAscending={isAscending}/>
+          </tbody>
+        </table>
+      </div>
+      <footer className="bg-black">
+
+      </footer>
     </div>
   )
 }

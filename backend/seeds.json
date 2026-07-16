@@ -61,6 +61,18 @@
             "seed": "EA B6 93 D1"
         },
         {
+            "date": "August 31 2013",
+            "difficulty": "Daily",
+            "type": "Pit Distance",
+            "seed": "54 61 27 EB"
+        },
+        {
+            "date": "September 1 2013",
+            "difficulty": "Daily",
+            "type": "Land Lums",
+            "seed": "45 E5 53 34"
+        },
+        {
             "date": "(SPECIAL) Double Bumper Land Speed",
             "difficulty": "Daily",
             "type": "Land Speed",
@@ -77,6 +89,18 @@
             "difficulty": "Daily",
             "type": "Pit Lums",
             "seed": "FC 6A C2 A0"
+        },
+        {
+            "date": "(SPECIAL) Fastest Pit Speed",
+            "difficulty": "Daily",
+            "type": "Pit Speed",
+            "seed": "ED F1 48 05"
+        },
+        {
+            "date": "(SPECIAL) Fastest Pit Speed",
+            "difficulty": "Weekly",
+            "type": "Pit Speed",
+            "seed": "66 35 91 D3"
         }
 
     ]
