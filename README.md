@@ -1,5 +1,5 @@
 <h1>Rayman Legends Challenge Seeds Viwer</h1><br>
-<strong>Nav</strong>
+<strong>Nav</strong><br><hr>
 <a href="#about">About</a>
 <a href="#add-seed">How To Add A Seed</a>
 
