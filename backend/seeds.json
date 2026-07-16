@@ -13,22 +13,34 @@
             "seed": "BA C5 9C B6"
         },
         {
-            "date": "Janaury 27 2020 - February 2 2020",
+            "date": "January 27 2020",
             "difficulty": "Weekly",
             "type": "Land Speed",
             "seed": "D4 D1 48 58"
         },
         {
-            "date": "Janaury 27 2020 - February 2 2020",
+            "date": "January 27 2020",
             "difficulty": "Weekly Extreme",
             "type": "Murfy Distance",
             "seed": "4C D6 62 02"
         },
         {
-            "date": "Janaury 27 2020 - February 2 2020",
+            "date": "June 3 2026",
+            "difficulty": "Daily",
+            "type": "Land Speed",
+            "seed": "6C 7B 83 2C"
+        },
+        {
+            "date": "June 29 2026",
+            "difficulty": "Weekly",
+            "type": "Pit Lums",
+            "seed": "3D B9 D1 DA"
+        },
+        {
+            "date": "June 29 2026",
             "difficulty": "Weekly Extreme",
-            "type": "Murfy Distance",
-            "seed": "4C D6 62 02"
+            "type": "Land Speed",
+            "seed": "A5 BE FB 80"
         }
 
     ]

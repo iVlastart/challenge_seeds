@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { bgColour, get_seeds, tHeader } from "./data/data";
+import { bgColour, get_seeds, seeds_sort, tHeader } from "./data/data";
+import { ArrowDown } from "./icons/arrowDown";
+import { ArrowUp } from "./icons/arrowUp";
 
-interface ISeed{
+export interface ISeed{
   date: string;
   difficulty: string;
   type: string;
@@ -10,6 +12,7 @@ interface ISeed{
 
 export default function App(){
   const [seeds, setSeeds] = useState<ISeed[]>([]);
+  const [isAscending, setIsAscending] = useState<boolean>(false);
 
   useEffect(()=>{
     //loads all seeds into seeds variable
@@ -23,7 +26,7 @@ export default function App(){
   return(
     <div className="container">
       <header className="w-full flex justify-center pt-1">
-        <h1 className="font-bold text-2xl">
+        <h1 className="font-bold text-2xl no-copy">
           Rayman Legends Challenge Seeds Viewer
         </h1>
       </header>
@@ -31,18 +34,25 @@ export default function App(){
         <thead>
           <tr>
             {tHeader.map((header,key)=>(
-              <th key={key}>
-                {String(header).charAt(0).toUpperCase() + String(header).slice(1)}
+              <th key={key} className={`${header==='date'?'cursor-pointer':''} no-copy`} onClick={header === 'date' ? () => setIsAscending(prev => !prev) : undefined}>
+                <div className="flex items-center justify-center gap-1">
+                  {String(header).charAt(0).toUpperCase() + String(header).slice(1)}
+                  {header === 'date' && (
+                    isAscending ? <ArrowUp/> : <ArrowDown/>
+                  )}
+                </div>
               </th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {seeds.map((seed, key) => (
+          {[...seeds]
+          .sort((a, b) => seeds_sort(a,b,isAscending))
+          .map((seed, key) => (
             <tr key={key} className={bgColour(seed.type)}>
-              <td>{seed.date}</td>
-              <td>{seed.difficulty}</td>
-              <td>{seed.type}</td>
+              <td className="no-copy">{seed.date}</td>
+              <td className="no-copy">{seed.difficulty}</td>
+              <td className="no-copy">{seed.type}</td>
               <td>{seed.seed}</td>
             </tr>
           ))}

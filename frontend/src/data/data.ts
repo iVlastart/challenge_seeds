@@ -1,4 +1,5 @@
 import axios from "axios";
+import type { ISeed } from "../App";
 
 export const get_seeds = async()=>{
   const res = await axios.get(`${import.meta.env.VITE_API_URL}/seeds`);
@@ -15,7 +16,13 @@ export const bgColour = (type:string)=>{
         case 'land': colour = 'bg-blue-800/50'; break;
         case 'murfy': colour = 'bg-gray-800/50'; break;
         case 'dojo': colour = 'bg-yellow-500/50'; break;
-        case 'tower': colour = 'brown'; break;
+        case 'tower': colour = 'bg-orange-800/50'; break;
     }
     return colour;
 };
+
+export const seeds_sort = (a:ISeed,b:ISeed, isAscending:boolean)=>{
+    return isAscending
+        ? new Date(a.date).getTime() - new Date(b.date).getTime()
+        : new Date(b.date).getTime() - new Date(a.date).getTime();
+}
