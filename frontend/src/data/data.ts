@@ -1,13 +1,16 @@
 import axios from "axios";
 import type { ISeed } from "../interfaces/data";
 
+//awaits all the seeds from backend
 export const get_seeds = async()=>{
   const res = await axios.get(`${import.meta.env.VITE_API_URL}/seeds`);
   return res.data;
 }
 
-export const tHeader:Array<string> = ['date', 'difficulty', 'type', 'seed']; //table headers
+//table headers
+export const tHeader:Array<string> = ['date', 'difficulty', 'type', 'seed'];
 
+//sets background colour based on the challenge
 export const bgColour = (type:string)=>{
     let colour:string = 'white'; //this will set the colour based on the challenge
     const challenge:string = type.substring(0, type.indexOf(' ')).toLowerCase(); //gets the name of the challenge
@@ -21,6 +24,7 @@ export const bgColour = (type:string)=>{
     return colour;
 };
 
+//ascending/descending ordering based on the date
 export const seeds_sort = (a:ISeed,b:ISeed, isAscending:boolean)=>{
     return isAscending
         ? new Date(a.date).getTime() - new Date(b.date).getTime()

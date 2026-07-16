@@ -4,6 +4,7 @@ import { ArrowDown } from "./icons/arrowDown";
 import { ArrowUp } from "./icons/arrowUp";
 import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
+import { SeedTHeader } from "./components/SeedTHeader";
 
 export default function App(){
   const [seeds, setSeeds] = useState<ISeed[]>([]);
@@ -28,16 +29,7 @@ export default function App(){
       <table>
         <thead>
           <tr>
-            {tHeader.map((header,key)=>(
-              <th key={key} className={`${header==='date'?'cursor-pointer':''} no-copy`} onClick={header === 'date' ? () => setIsAscending(prev => !prev) : undefined}>
-                <div className="flex items-center justify-center gap-1">
-                  {String(header).charAt(0).toUpperCase() + String(header).slice(1)}
-                  {header === 'date' && (
-                    isAscending ? <ArrowUp/> : <ArrowDown/>
-                  )}
-                </div>
-              </th>
-            ))}
+            <SeedTHeader isAscending={isAscending} setIsAscending={setIsAscending}/>
           </tr>
         </thead>
         <tbody>
