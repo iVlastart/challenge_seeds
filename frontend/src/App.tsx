@@ -4,6 +4,7 @@ import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
 import { SeedTHeader } from "./components/SeedTHeader";
 import { Header } from "./components/Header";
+import { GitHub } from "./icons/GitHub";
 
 export default function App(){
   const [seeds, setSeeds] = useState<ISeed[]>([]);
@@ -33,8 +34,10 @@ export default function App(){
           </tbody>
         </table>
       </div>
-      <footer className="bg-black">
-
+      <footer className="bg-black h-20 text-white flex flex-row items-center px-5">
+        <a href="https://github.com/iVlastart/challenge_seeds" target="_blank" className="flex gap-x-2 items-center">
+          <GitHub/> Repo
+        </a>
       </footer>
     </div>
   )
