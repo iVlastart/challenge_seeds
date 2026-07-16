@@ -10,7 +10,7 @@ export const SeedTBody = ({seeds, isAscending}:ITBody)=>{
           .map((seed, key) => (
             <tr key={key} className={bgColour(seed.type)}>
               <td className="no-copy">{seed.date}</td>
-              <td className="no-copy">{seed.difficulty}</td>
+              <td className="no-copy">{seed.difficulty} Challenge</td>
               <td className="no-copy">{seed.type}</td>
               <td>{seed.seed}</td>
             </tr>

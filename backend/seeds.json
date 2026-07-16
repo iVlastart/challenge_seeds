@@ -43,6 +43,24 @@
             "seed": "A5 BE FB 80"
         },
         {
+            "date": "October 2 2015",
+            "difficulty": "Daily",
+            "type": "Land Distance 50s",
+            "seed": "81 CC 56 0E"
+        },
+        {
+            "date": "October 2 2015",
+            "difficulty": "Daily Extreme",
+            "type": "Dojo 120s",
+            "seed": "C7 8C 1D F5"
+        },
+        {
+            "date": "September 18 2015",
+            "difficulty": "Daily",
+            "type": "Tower Speed 500m",
+            "seed": "EA B6 93 D1"
+        },
+        {
             "date": "(SPECIAL) Double Bumper Land Speed",
             "difficulty": "Daily",
             "type": "Land Speed",
@@ -53,6 +71,12 @@
             "difficulty": "Daily Extreme",
             "type": "Tower Speed",
             "seed": "A7 3C 12 DC"
+        },
+        {
+            "date": "(SPECIAL) Former Fastest Pit Lums",
+            "difficulty": "Daily",
+            "type": "Pit Lums",
+            "seed": "FC 6A C2 A0"
         }
 
     ]
