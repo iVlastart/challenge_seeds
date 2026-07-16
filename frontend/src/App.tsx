@@ -5,6 +5,7 @@ import { ArrowUp } from "./icons/arrowUp";
 import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
 import { SeedTHeader } from "./components/SeedTHeader";
+import { Header } from "./components/Header";
 
 export default function App(){
   const [seeds, setSeeds] = useState<ISeed[]>([]);
@@ -21,11 +22,7 @@ export default function App(){
   })
   return(
     <div className="container">
-      <header className="w-full flex justify-center pt-1">
-        <h1 className="font-bold text-2xl no-copy">
-          Rayman Legends Challenge Seeds Viewer
-        </h1>
-      </header>
+      <Header/>
       <table>
         <thead>
           <tr>
