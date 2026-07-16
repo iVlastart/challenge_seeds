@@ -1,0 +1,35 @@
+{
+    "seeds":[
+        {
+            "date": "February 2 2020",
+            "difficulty": "Daily",
+            "type": "Pit Distance",
+            "seed": "22 C2 B6 EC"
+        },
+        {
+            "date": "February 2 2020",
+            "difficulty": "Daily Extreme",
+            "type": "Dojo 60s",
+            "seed": "BA C5 9C B6"
+        },
+        {
+            "date": "Janaury 27 2020 - February 2 2020",
+            "difficulty": "Weekly",
+            "type": "Land Speed",
+            "seed": "D4 D1 48 58"
+        },
+        {
+            "date": "Janaury 27 2020 - February 2 2020",
+            "difficulty": "Weekly Extreme",
+            "type": "Murfy Distance",
+            "seed": "4C D6 62 02"
+        },
+        {
+            "date": "Janaury 27 2020 - February 2 2020",
+            "difficulty": "Weekly Extreme",
+            "type": "Murfy Distance",
+            "seed": "4C D6 62 02"
+        }
+
+    ]
+}

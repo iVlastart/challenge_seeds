@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.container{
+  @apply w-screen h-screen flex flex-col gap-y-4;
+}
+
+table{
+  font-family: arial, sans_serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th{
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
