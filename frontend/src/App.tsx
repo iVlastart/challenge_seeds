@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { get_seeds, tHeader } from "./data/data";
-import { ArrowDown } from "./icons/arrowDown";
-import { ArrowUp } from "./icons/arrowUp";
+import { get_seeds } from "./data/data";
 import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
 import { SeedTHeader } from "./components/SeedTHeader";
