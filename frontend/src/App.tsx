@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { seedsArr } from "./data/seeds";
 import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
@@ -7,13 +7,9 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
 export default function App(){
-  const [seeds, setSeeds] = useState<ISeed[]>([]);
   const [isAscending, setIsAscending] = useState<boolean>(false);
+  const seeds:ISeed[] = seedsArr;
 
-  useEffect(()=>{
-    //loads all seeds into seeds variable
-    setSeeds(seedsArr);
-  })
   return(
     <div className="container">
       <Header/>
