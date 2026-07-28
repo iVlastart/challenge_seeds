@@ -18,4 +18,4 @@ app.get('/seeds', (req, res)=>{
 
 const PORT = process.env.PORT;
 
-app.listen(PORT, ()=>console.log('The server is running...'));
+module.exports = app;
