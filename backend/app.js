@@ -16,4 +16,6 @@ app.get('/seeds', (req, res)=>{
     res.status(200).json(seeds.seeds);
 });
 
-module.exports = app;
+const PORT = process.env.PORT;
+
+app.listen(PORT, ()=>console.log('The server is running...'));
