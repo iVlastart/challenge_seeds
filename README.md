@@ -6,13 +6,13 @@
 <div id="about">
   <h2>About</h2>
   <p>
-    This is a website containing Rayman Legends Challenge Seeds. Application provides seeds from various dates including special seeds (labeled (SPECIAL) <name>).
+    This is a website containing Rayman Legends Challenge Seeds. Application provides seeds from various dates including special seeds labeled "(SPECIAL) <name>".
   </p>
 </div>
 
 <div id="seed">
   <h2>What's a seed?</h2>
   <p>
-    A seed is a 32b hexadecimal value which is used to generate layout. Same seed always generate the same challenge and different seeds give different results.
+    A seed is a 32b hexadecimal value which is used to generate layout. Same seed always generate the same layout and different seeds give different results.
   </p>
 </div>
