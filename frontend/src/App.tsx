@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { get_seeds } from "./data/data";
+import { seedsArr } from "./data/seeds";
 import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
 import { SeedTHeader } from "./components/SeedTHeader";
@@ -12,12 +12,7 @@ export default function App(){
 
   useEffect(()=>{
     //loads all seeds into seeds variable
-    const load_seeds = async()=>{
-      const data = await get_seeds();
-      setSeeds(data);
-    }
-
-    load_seeds();
+    setSeeds(seedsArr);
   })
   return(
     <div className="container">

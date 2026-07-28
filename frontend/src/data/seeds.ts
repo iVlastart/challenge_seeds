@@ -1,0 +1,118 @@
+import type { ISeed } from "../interfaces/data";
+
+export const seedsArr: ISeed[] = [
+    {
+        date: "February 2 2020",
+        difficulty: "Daily",
+        type: "Pit Distance",
+        seed: "22 C2 B6 EC"
+    },
+    {
+        date: "February 2 2020",
+        difficulty: "Daily Extreme",
+        type: "Dojo 60s",
+        seed: "BA C5 9C B6"
+    },
+    {
+        date: "January 27 2020",
+        difficulty: "Weekly",
+        type: "Land Speed",
+        seed: "D4 D1 48 58"
+    },
+    {
+        date: "January 27 2020",
+        difficulty: "Weekly Extreme",
+        type: "Murfy Distance",
+        seed: "4C D6 62 02"
+    },
+    {
+        date: "June 3 2026",
+        difficulty: "Daily",
+        type: "Land Speed",
+        seed: "6C 7B 83 2C"
+    },
+    {
+        date: "June 29 2026",
+        difficulty: "Weekly",
+        type: "Pit Lums",
+        seed: "3D B9 D1 DA"
+    },
+    {
+        date: "June 29 2026",
+        difficulty: "Weekly Extreme",
+        type: "Land Speed",
+        seed: "A5 BE FB 80"
+    },
+    {
+        date: "October 2 2015",
+        difficulty: "Daily",
+        type: "Land Distance 50s",
+        seed: "81 CC 56 0E"
+    },
+    {
+        date: "October 2 2015",
+        difficulty: "Daily Extreme",
+        type: "Dojo 120s",
+        seed: "C7 8C 1D F5"
+    },
+    {
+        date: "September 18 2015",
+        difficulty: "Daily",
+        type: "Tower Speed 500m",
+        seed: "EA B6 93 D1"
+    },
+    {
+        date: "August 31 2013",
+        difficulty: "Daily",
+        type: "Pit Distance",
+        seed: "54 61 27 EB"
+    },
+    {
+        date: "September 1 2013",
+        difficulty: "Daily",
+        type: "Land Lums",
+        seed: "45 E5 53 34"
+    },
+    {
+        date: "July 27 2026",
+        difficulty: "Daily Extreme",
+        type: "Land Lums",
+        seed: "6E E4 3C 57"
+    },
+    {
+        date: "July 27 2026",
+        difficulty: "Weekly Extreme",
+        type: "Land Speed",
+        seed: "1A 2F 85 05"
+    },
+    {
+        date: "(SPECIAL) Double Bumper Land Speed",
+        difficulty: "Daily",
+        type: "Land Speed",
+        seed: "AB 25 8F 80"
+    },
+    {
+        date: "(SPECIAL) Fastest Tower Speed",
+        difficulty: "Daily Extreme",
+        type: "Tower Speed",
+        seed: "A7 3C 12 DC"
+    },
+    {
+        date: "(SPECIAL) Former Fastest Pit Lums",
+        difficulty: "Daily",
+        type: "Pit Lums",
+        seed: "FC 6A C2 A0"
+    },
+    {
+        date: "(SPECIAL) Fastest Pit Speed",
+        difficulty: "Daily",
+        type: "Pit Speed",
+        seed: "ED F1 48 05"
+    },
+    {
+        date: "(SPECIAL) Fastest Pit Speed",
+        difficulty: "Weekly",
+        type: "Pit Speed",
+        seed: "66 35 91 D3"
+    }
+];

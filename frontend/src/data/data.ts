@@ -1,12 +1,6 @@
 import axios from "axios";
 import type { ISeed } from "../interfaces/data";
 
-//awaits all the seeds from backend
-export const get_seeds = async()=>{
-  const res = await axios.get(`${import.meta.env.VITE_API_URL}/seeds`);
-  return res.data;
-}
-
 //table headers
 export const tHeader:Array<string> = ['date', 'difficulty', 'type', 'seed'];
 
