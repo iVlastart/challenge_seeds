@@ -73,6 +73,18 @@
             "seed": "45 E5 53 34"
         },
         {
+            "date": "July 27 2026",
+            "difficulty": "Daily Extreme",
+            "type": "Land Lums",
+            "seed": "6E E4 3C 57"
+        },
+        {
+            "date": "July 27 2026",
+            "difficulty": "Weekly Extreme",
+            "type": "Land Speed",
+            "seed": "1A 2F 85 05"
+        },
+        {
             "date": "(SPECIAL) Double Bumper Land Speed",
             "difficulty": "Daily",
             "type": "Land Speed",

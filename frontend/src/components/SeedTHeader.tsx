@@ -11,7 +11,7 @@ export const SeedTHeader = ({isAscending, setIsAscending}:ISeedTHeader)=>{
                 <div className="flex items-center justify-center gap-1">
                   {String(header).charAt(0).toUpperCase() + String(header).slice(1)}
                   {header === 'date' && (
-                    isAscending ? <ArrowUp/> : <ArrowDown/>
+                    isAscending ? <ArrowDown/> : <ArrowUp/>
                   )}
                 </div>
               </th>
