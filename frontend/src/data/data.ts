@@ -1,4 +1,3 @@
-import axios from "axios";
 import type { ISeed } from "../interfaces/data";
 
 //table headers
