@@ -18,7 +18,7 @@ export default function App(){
   return(
     <div className="container">
       <Header/>
-      <div className="max-h-10/12 overflow-y-scroll">
+      <div className="flex-1 overflow-y-auto bg-white">
         <table>
           <thead className="sticky top-0 bg-white">
             <tr>
