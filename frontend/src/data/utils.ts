@@ -1,12 +1,9 @@
 import type { ISeed } from "../interfaces/data";
 
-//table headers
-export const tHeader:Array<string> = ['date', 'difficulty', 'type', 'seed'];
-
 //sets background colour based on the challenge
 export const bgColour = (type:string)=>{
     let colour:string = 'white'; //this will set the colour based on the challenge
-    const challenge:string = type.substring(0, type.indexOf(' ')).toLowerCase(); //gets the name of the challenge
+    const challenge:string = getFirstWord(type).toLowerCase(); //gets the name of the challenge
     switch(challenge){
         case 'pit': colour = 'bg-green-800/50'; break;
         case 'land': colour = 'bg-blue-800/50'; break;
@@ -23,3 +20,13 @@ export const seeds_sort = (a:ISeed,b:ISeed, isAscending:boolean)=>{
         ? new Date(a.date).getTime() - new Date(b.date).getTime()
         : new Date(b.date).getTime() - new Date(a.date).getTime();
 }
+
+//makes the 1st word upper case
+export const firstUpperCase = (s:string):string=>{
+    return String(s).charAt(0).toUpperCase() + String(s).slice(1);
+}
+
+//gets you the 1st word
+export const getFirstWord = (s:string):string=>{
+  return s.substring(0, s.indexOf(' '));
+};

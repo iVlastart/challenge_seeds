@@ -1,4 +1,4 @@
-import { tHeader } from "../data/data";
+import { tHeader } from "../data/constants";
 import { ArrowDown } from "../icons/arrowDown";
 import { ArrowUp } from "../icons/arrowUp";
 import type { ISeedTHeader } from "../interfaces/components";
