@@ -23,10 +23,10 @@ export const SeedTBody = ({seeds, isAscending, dateC, diffC, challengeC}:ITBody)
               <td className="no-copy">{seed.type}</td>
               <td className="flex flex-row justify-between items-center">
                 {seed.seed}
-                <div className="cursor-pointer" 
+                <abbr className="cursor-pointer" title="copy seed" 
                       onClick={()=>copyText(seed.seed).then((success:boolean)=>alert(success?'text copied to clipboard': 'failed to copy to clipboard'))}>
                   <Copy/>
-                </div>
+                </abbr>
               </td>
             </tr>
           ))}
