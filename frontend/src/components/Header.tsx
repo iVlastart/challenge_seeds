@@ -4,6 +4,9 @@ export const Header = ()=>{
             <h1 className="font-bold text-2xl no-copy">
               Rayman Legends Challenge Seeds Viewer
             </h1>
+            <div>
+                
+            </div>
         </header>
     )
 };
