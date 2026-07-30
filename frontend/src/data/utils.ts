@@ -30,3 +30,15 @@ export const firstUpperCase = (s:string):string=>{
 export const getFirstWord = (s:string):string=>{
   return s.substring(0, s.indexOf(' '));
 };
+
+
+//puts a string into user's clipboard
+export const copyText = async(s:string):Promise<boolean>=>{
+    try{
+        await navigator.clipboard.writeText(s);
+        return true;
+    }
+    catch(err){
+        return false;
+    }
+};

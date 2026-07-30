@@ -1,4 +1,5 @@
-import { bgColour, getFirstWord, seeds_sort } from "../data/utils"
+import { bgColour, copyText, getFirstWord, seeds_sort } from "../data/utils"
+import { Copy } from "../icons/copy";
 import type { ITBody } from "../interfaces/components"
 
 export const SeedTBody = ({seeds, isAscending, dateC, diffC, challengeC}:ITBody)=>{
@@ -20,7 +21,13 @@ export const SeedTBody = ({seeds, isAscending, dateC, diffC, challengeC}:ITBody)
               <td className="no-copy">{seed.date}</td>
               <td className="no-copy">{seed.difficulty} Challenge</td>
               <td className="no-copy">{seed.type}</td>
-              <td>{seed.seed}</td>
+              <td className="flex flex-row justify-between items-center">
+                {seed.seed}
+                <div className="cursor-pointer" 
+                      onClick={()=>copyText(seed.seed).then((success:boolean)=>alert(success?'text copied to clipboard': 'failed to copy to clipboard'))}>
+                  <Copy/>
+                </div>
+              </td>
             </tr>
           ))}
         </>
