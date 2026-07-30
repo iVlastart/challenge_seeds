@@ -6,7 +6,7 @@ import type { ISearchTHeader } from "../interfaces/components"
 export const SearchTHeader = ({setDateC, setDiffC, setChallengeC}:ISearchTHeader)=>{
     return(
         <>
-            <th>
+            <th className="no-copy">
               <select name="dateCategory" id="dateCategory" onChange={(e:ChangeEvent<HTMLSelectElement>) => setDateC(e.target.value)}>
                 {dateCategory.map((dc, key) => (
                   <option value={dc} key={key}>
