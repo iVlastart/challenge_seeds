@@ -110,6 +110,12 @@ export const seedsArr: ISeed[] = [
         seed: "D7 20 6E 74"
     },
     {
+        date: "August 1 2026",
+        difficulty: "Daily Extreme",
+        type: "Pit Speed",
+        seed: "DD F8 3E 25"
+    },
+    {
         date: "(SPECIAL) Double Bumper Land Speed",
         difficulty: "Daily",
         type: "Land Speed",
