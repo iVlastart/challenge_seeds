@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { seedsArr } from "./data/seeds";
 import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
