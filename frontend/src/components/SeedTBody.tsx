@@ -22,7 +22,7 @@ export const SeedTBody = ({seeds, isAscending, dateC, diffC, challengeC}:ITBody)
               <td className="no-copy">{seed.difficulty} Challenge</td>
               <td className="no-copy">{seed.type}</td>
               <td className="flex flex-col-reverse items-center justify-center md:flex-row md:justify-between md:items-center">
-                <p>
+                <p className="">
                   {seed.seed}
                 </p>
                 <abbr className="cursor-pointer" title="copy seed" 

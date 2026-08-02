@@ -18,9 +18,9 @@ export default function App(){
   return(
     <div className="container">
       <Header/>
-      <div className="flex-1 overflow-y-auto bg-white">
+      <div className="flex-1 overflow-y-auto">
         <table>
-          <thead className="sticky top-0 bg-white">
+          <thead className="sticky top-0 bg-base-100">
             <tr>
               <SearchTHeader setDateC={setDateC} setDiffC={setDiffC} setChallengeC={setChallengeC} />
             </tr>

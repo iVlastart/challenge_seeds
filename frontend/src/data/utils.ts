@@ -42,3 +42,12 @@ export const copyText = async(s:string):Promise<boolean>=>{
         return false;
     }
 };
+
+//toggles between light mode and dark mode
+export const toggleTheme = (setTheme:React.Dispatch<React.SetStateAction<string>>):void=>{
+    const html = document.documentElement;
+    const theme:string = (html.dataset.theme==='dark')?'light':'dark';
+    localStorage.setItem('theme', theme);
+    setTheme(theme);
+    html.dataset.theme = theme;
+}

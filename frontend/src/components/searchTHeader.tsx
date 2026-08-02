@@ -4,6 +4,7 @@ import { firstUpperCase } from "../data/utils"
 import type { ISearchTHeader } from "../interfaces/components"
 
 export const SearchTHeader = ({setDateC, setDiffC, setChallengeC}:ISearchTHeader)=>{
+    
     return(
         <>
             <th>
@@ -33,7 +34,7 @@ export const SearchTHeader = ({setDateC, setDiffC, setChallengeC}:ISearchTHeader
                 ))}
               </select>
             </th>
-            <th className="w-max h-max bg-white">
+            <th className="w-max h-max">
 
             </th>
         </>

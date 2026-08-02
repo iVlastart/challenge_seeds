@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@plugin 'daisyui' {
+  themes: light --default, dark --prefersdark;
+}
 
 .container{
   @apply w-screen h-screen flex flex-col gap-y-4 overflow-hidden;
