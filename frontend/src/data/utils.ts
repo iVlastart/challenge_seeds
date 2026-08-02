@@ -43,12 +43,6 @@ export const copyText = async(s:string):Promise<boolean>=>{
     }
 };
 
-//inits the theme when page loads
-export const initTheme = ()=>{
-    const theme = localStorage.getItem('theme') ?? 'light';
-    const html = document.documentElement;
-    html.dataset.theme = theme;
-}
 //toggles between light mode and dark mode
 export const toggleTheme = (setTheme:React.Dispatch<React.SetStateAction<string>>):void=>{
     const html = document.documentElement;
