@@ -17,12 +17,14 @@ export const SeedTBody = ({seeds, isAscending, dateC, diffC, challengeC}:ITBody)
           .map(seed=> JSON.parse(seed))
           .sort((a, b) => seeds_sort(a,b,isAscending))
           .map((seed, key) => (
-            <tr key={key} className={bgColour(seed.type)}>
+            <tr key={key} className={`${bgColour(seed.type)}`}>
               <td className="no-copy">{seed.date}</td>
               <td className="no-copy">{seed.difficulty} Challenge</td>
               <td className="no-copy">{seed.type}</td>
-              <td className="flex flex-row justify-between items-center">
-                {seed.seed}
+              <td className="flex flex-col-reverse items-center justify-center md:flex-row md:justify-between md:items-center">
+                <p>
+                  {seed.seed}
+                </p>
                 <abbr className="cursor-pointer" title="copy seed" 
                       onClick={()=>copyText(seed.seed).then((success:boolean)=>alert(success?'text copied to clipboard': 'failed to copy to clipboard'))}>
                   <Copy/>
