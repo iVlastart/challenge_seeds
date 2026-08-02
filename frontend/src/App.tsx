@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { seedsArr } from "./data/seeds";
 import { SeedTBody } from "./components/SeedTBody";
 import type { ISeed } from "./interfaces/data";
@@ -13,7 +13,6 @@ export default function App(){
   const [dateC, setDateC] = useState<string>('any');
   const [diffC, setDiffC] = useState<string>('any');
   const [challengeC, setChallengeC] = useState<string>('any');
-  
 
   return(
     <div className="container">
