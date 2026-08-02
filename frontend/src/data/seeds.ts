@@ -1,6 +1,7 @@
 import type { ISeed } from "../interfaces/data";
 
-export const seedsArr: ISeed[] = [
+//seeds from specific dates
+const dateSeeds: ISeed[] = [
     {
         date: "February 2 2020",
         difficulty: "Daily",
@@ -121,6 +122,10 @@ export const seedsArr: ISeed[] = [
         type: "Pit Lums",
         seed: "E1 8B 5B BE"
     },
+];
+
+//special seeds
+const specialSeeds:ISeed[]=[
     {
         date: "(SPECIAL) Double Bumper Land Speed",
         difficulty: "Daily",
@@ -151,4 +156,7 @@ export const seedsArr: ISeed[] = [
         type: "Pit Speed",
         seed: "66 35 91 D3"
     }
-];
+]
+
+//combines both arrays and exports them
+export const seedsArr:ISeed[] = dateSeeds.concat(specialSeeds);
