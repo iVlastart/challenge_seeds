@@ -194,6 +194,12 @@ const dateSeeds: ISeed[] = [
         type: "Land Speed",
         seed: "1E DE ED 06"
     },
+    {
+        date: "September 7 2026",
+        difficulty: "Weekly Extreme",
+        type: "Pit Speed",
+        seed: "6B 9A 0F A7"
+    },
 ];
 
 //special seeds
