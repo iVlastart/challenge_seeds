@@ -248,8 +248,21 @@ const dateSeeds: ISeed[] = [
         type: "Tower Speed",
         seed: "93 08 E6 8A"
     },
+    {
+        date: "July 17 2023",
+        difficulty: "Weekly",
+        type: "Land Speed",
+        seed: "31 CB 90 11"
+    },
+    {
+        date: "February 5 2026",
+        difficulty: "Daily Extreme",
+        type: "Land Speed",
+        seed: "81 3E 8A 16"
+    },
+    
 ];
-//w
+//w W
 
 //special seeds
 const specialSeeds:ISeed[]=[
