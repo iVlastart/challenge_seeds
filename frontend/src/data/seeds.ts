@@ -266,6 +266,12 @@ const dateSeeds: ISeed[] = [
         type: "Land Lums",
         seed: "40 1E 90 FA"
     },
+    {
+        date: "September 12 2026",
+        difficulty: "Daily Extreme",
+        type: "Land Lums",
+        seed: "9B 45 11 D2"
+    },
     
 ];
 //w W
