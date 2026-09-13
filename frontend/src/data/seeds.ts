@@ -272,6 +272,25 @@ const dateSeeds: ISeed[] = [
         type: "Land Lums",
         seed: "9B 45 11 D2"
     },
+    {
+        date: "May 9 2026",
+        difficulty: "Daily",
+        type: "Land Lums",
+        seed: "6B 87 6B 86"
+    },
+    {
+        date: "June 29 2026",
+        difficulty: "Daily Extreme",
+        type: "Land Lums",
+        seed: "58 0D 63 94"
+    },
+    {
+        date: "July 18 2023",
+        difficulty: "Daily Extreme",
+        type: "Land Lums",
+        seed: "F4 04 8C 45"
+    },
+
     
 ];
 //w W
@@ -307,7 +326,13 @@ const specialSeeds:ISeed[]=[
         difficulty: "Weekly",
         type: "Pit Speed",
         seed: "66 35 91 D3"
-    }
+    },
+    {
+        date: "(SPECIAL) Fastest Land Lums",
+        difficulty: "Daily Extreme",
+        type: "Land Lums",
+        seed: "F4 04 8C 45"
+    },
 ]
 
 //combines both arrays and exports them
